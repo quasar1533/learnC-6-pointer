@@ -16,7 +16,7 @@ void InitPointer(int **ptr, int length, int init_value) {
 
 int main() {
   // 普通的数组是分配在栈区   在函数调用栈上
-  // 用malloc函数开辟一块内存，存放数组
+  // 用malloc函数在堆区开辟一块内存，存放数组
   // 使用malloc分配内存，要初始化
   int *players = malloc(sizeof(int) * PLAYER_COUNT);
   for (int i = 0; i < PLAYER_COUNT; ++i) {
